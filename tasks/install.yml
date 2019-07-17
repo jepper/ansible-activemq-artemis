@@ -1,0 +1,27 @@
+---
+- block:
+  - name: "Install lxml,unzip"
+    become: true
+    package:
+      name: python-lxml,unzip
+      state: installed
+
+  - name: "Retrieve Distribution (Maven)"
+    maven_artifact:
+      artifact_id: apache-artemis
+      classifier: bin
+      dest: "/tmp/{{ artemis_download_name }}"
+      extension: zip
+      group_id: org.apache.activemq
+      repository_url: "{{ artemis_repository_url | default(omit) }}"
+      version: "{{ artemis_version }}"
+
+  - name: "Expand Distribution"
+    become: true
+    unarchive:
+      copy: false
+      creates: "{{ artemis_home_dir }}"
+      dest: "/opt"
+      group: root
+      owner: root
+      src: "/tmp/{{ artemis_download_name }}"

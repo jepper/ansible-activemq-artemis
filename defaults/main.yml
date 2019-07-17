@@ -1,2 +1,8 @@
 ---
 # defaults file for ../ansible-activemq-artemis
+
+artemis_version: "2.9.0"
+artemis_download_name: "apache-artemis-{{ artemis_version }}-bin.zip"
+artemis_group: artemis
+artemis_user: artemis
+artemis_home_dir: "/opt/apache-artemis-{{ artemis_version }}"

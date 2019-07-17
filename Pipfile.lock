@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "fc0684834f94d03295b1ab40d30e13c238f2a70cb9ea2d3e5c57b081d4052f18"
+            "sha256": "ba3ee9b5e839f42733d55eaa945a83f5a91aeb7815d85cdb1606eb0a0eef681b"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -275,12 +275,15 @@
             "version": "==0.6.1"
         },
         "molecule": {
+            "extras": [
+                "vagrant"
+            ],
             "hashes": [
-                "sha256:0e9ef6845cdf2a01f6c386445e4e54add3f515a033ee16b7b658e6122c8f0d76",
-                "sha256:621797c54299775f284bbb010d5bb9be485500eecaaa14a476cbc0df285d0da7"
+                "sha256:5fa56e52602364716dd5aa55e1dd70400f2094b8cc3c458869e5382e84149065",
+                "sha256:9dc29b9ef172b26532752784687faca2e868c84e2d90f0b4f018d81d76a8b30a"
             ],
             "index": "pypi",
-            "version": "==2.20.1"
+            "version": "==2.20.2"
         },
         "monotonic": {
             "hashes": [
@@ -416,6 +419,13 @@
             ],
             "version": "==1.2.1"
         },
+        "python-vagrant": {
+            "hashes": [
+                "sha256:af9a8a9802d382d45dbea96aa3cfbe77c6e6ad65b3fe7b7c799d41ab988179c6"
+            ],
+            "index": "pypi",
+            "version": "==0.5.15"
+        },
         "pyyaml": {
             "hashes": [
                 "sha256:3d7da3009c0f3e783b2c873687652d83b1bbfd5c88e9813fb7e5b03c0dd3108b",
@@ -484,10 +494,10 @@
         },
         "testinfra": {
             "hashes": [
-                "sha256:8dbbf25039674d419598f576c5652947cebdf7cbbea8f23acacc80271009c6cb",
-                "sha256:d13dda899d5a051465f041a821363e2ebdd079391fbeae04089a2df7d35e3d54"
+                "sha256:13ab96be7d8599e58a327a2c7e118c94c3809f45b5570e0b9528735f52051cbf",
+                "sha256:473afcf4874a2ba87ed7a3dc1c5329fae31053f528daf9eaaa1e7d41edadbec1"
             ],
-            "version": "==1.19.0"
+            "version": "==3.0.5"
         },
         "tree-format": {
             "hashes": [

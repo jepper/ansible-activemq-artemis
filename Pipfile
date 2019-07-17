@@ -6,7 +6,8 @@ verify_ssl = true
 [dev-packages]
 
 [packages]
-molecule = "*"
+molecule = {extras = ["vagrant"],version = "*"}
+python-vagrant = "*"
 
 [requires]
 python_version = "3.7"
